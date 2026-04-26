@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback, Suspense, lazy } from 
 import { motion } from 'framer-motion';
 import logoUrl from './assets/itms-logo1.png';
 import logoIcon from './assets/logo-icon.png';
+import imgArchitecture from './assets/system-architecture.png';
 import imgGunarathna from './assets/team/gunarathna.png';
 import imgRandima from './assets/team/randima.png';
 import imgTennakoon from './assets/team/tennakoon.jpg';
@@ -472,6 +473,71 @@ const Domain = () => (
           </p>
         </motion.div>
       </motion.div>
+    </div>
+  </section>
+);
+
+const ResearchObjectives = () => {
+  const objectives = [
+    { title: "Parking Violation Detection", desc: "Develop an AI-driven module to detect illegally parked vehicles in real-time and calculate fines using YOLOv8 computer vision models." },
+    { title: "Traffic Violation Detection", desc: "Implement automated traffic rule monitoring to identify violations like lane weaving and redline crossing, capturing evidence for law enforcement." },
+    { title: "IoT Smart Junction System", desc: "Build a sensor-integrated junction controller using ESP8266 to optimize signal timing based on vehicle density and detect emergency vehicles." },
+    { title: "Backend & Cloud Integration", desc: "Create a centralized FastAPI integration layer that syncs IoT data from AWS DynamoDB with Firebase for real-time mobile and dashboard access." }
+  ];
+
+  return (
+    <section id="objectives" className="section" style={{ background: 'transparent' }}>
+      <div className="container">
+        <SectionHeading subtitle="Key goals and module-specific focus areas of the Intelligent Traffic Management System.">Research Objectives</SectionHeading>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}
+        >
+          {objectives.map((obj, i) => (
+            <motion.div key={i} variants={fadeUpVariant} className="glass-card glass-card-hover" style={{ borderLeft: '4px solid var(--primary-color)' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: '#fff' }}>{obj.title}</h3>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>{obj.desc}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+const Methodology = () => (
+  <section id="methodology" className="section bg-methodology" style={{ background: 'rgba(255, 255, 255, 0.01)' }}>
+    <div className="container">
+      <SectionHeading subtitle="Technical breakdown of the ITMS modular architecture and data flow.">Methodology & Architecture</SectionHeading>
+      
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'stretch', marginTop: '3rem' }}>
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="glass-card"
+          style={{ flex: '1 1 350px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+        >
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: '1.8', marginBottom: '1.5rem' }}>
+            The ITMS system utilizes a <strong>modular but integrated architecture</strong> that bridges Computer Vision, Internet of Things (IoT), and Cloud Computing. 
+          </p>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.8' }}>
+            Modules communicate via REST and MQTT APIs to maintain real-time synchronization. <strong>YOLOv8</strong> models handle the vision-based violation tracking, while an <strong>ESP8266-based IoT layer</strong> manages physical junction signals. All data flows through a central <strong>Python FastAPI</strong> backend, leveraging <strong>AWS DynamoDB</strong> for high-speed sensor ingestion and <strong>Firebase</strong> for seamless frontend delivery to the Admin Dashboard and Mobile interfaces.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          style={{ flex: '1.5 1 500px', background: '#fff', borderRadius: '20px', padding: '15px', boxShadow: '0 20px 40px rgba(0,0,0,0.5)', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+        >
+          <img src={imgArchitecture} alt="System Architecture Diagram" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px' }} />
+        </motion.div>
+      </div>
     </div>
   </section>
 );
@@ -1090,6 +1156,8 @@ const App = () => {
           <HeroSection />
           <LogosSection />
           <Domain />
+          <ResearchObjectives />
+          <Methodology />
           <Milestones />
           <Documents />
           <Presentations />
