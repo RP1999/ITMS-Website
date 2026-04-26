@@ -560,8 +560,8 @@ const Documents = () => {
     { title: "Final Document (Main)", status: "Coming Soon", file: "/ITMS-Website/docs/final_main.pdf" },
     { title: "Final Document (IT22925572)", status: "Coming Soon", file: "/ITMS-Website/docs/final_annex1.pdf" },
     { title: "Final Document (IT22900890)", status: "Coming Soon", file: "/ITMS-Website/docs/final_annex2.pdf" },
-    { title: "Final Document (IT22824338)", status: "Coming Soon", file: "/ITMS-Website/docs/final_annex3.pdf" },
-    { title: "Final Document (IT22919374)", status: "Coming Soon", file: "/ITMS-Website/docs/final_annex4.pdf" }
+    { title: "Final Document (IT22363848)", status: "Coming Soon", file: "/ITMS-Website/docs/final_annex3.pdf" },
+    { title: "Final Document (IT22337580)", status: "Coming Soon", file: "/ITMS-Website/docs/final_annex4.pdf" }
   ];
 
   return (
