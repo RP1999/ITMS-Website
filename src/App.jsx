@@ -482,10 +482,10 @@ const Milestones = () => {
     { title: "Progress Presentation I", date: "MAY 1, 2025", marks: "15%", status: "COMPLETED", desc: "First progress review covering the initial implementation stage and overall project development status." },
     { title: "Progress Presentation II", date: "MARCH 9, 2026", marks: "18%", status: "COMPLETED", desc: "Second progress review focused on advanced implementation progress, refinements, and readiness for completion." },
     { title: "Final Presentation and VIVA", date: "DATE TBD", marks: "20%", status: "PLANNED", desc: "Final presentation and viva assessment demonstrating the completed solution and evaluating each member's understanding." },
-    { title: "Final Report", date: "DATE TBD", marks: "19%", status: "PLANNED", desc: "Comprehensive final project report documenting the full research, implementation, evaluation, and outcomes." },
+    { title: "Final Report", date: "DATE TBD", marks: "19%", status: "COMPLETED", desc: "Comprehensive final project report documenting the full research, implementation, evaluation, and outcomes." },
     { title: "Research Paper (published)", date: "DATE TBD", marks: "10%", status: "PLANNED", desc: "Published research paper presenting the project's contribution, findings, and academic value." },
-    { title: "Website", date: "DATE TBD", marks: "2%", status: "PLANNED", desc: "Project website submission showcasing the research, implementation details, milestones, and downloadable resources." },
-    { title: "Research Logbook, Status Document 1 & 2", date: "DATE TBD", marks: "4%", status: "PLANNED", desc: "Continuous assessment based on research logbook maintenance and the submission of status documents 1 and 2." }
+    { title: "Website", date: "DATE TBD", marks: "2%", status: "COMPLETED", desc: "Project website submission showcasing the research, implementation details, milestones, and downloadable resources." },
+    { title: "Research Logbook, Status Document 1 & 2", date: "DATE TBD", marks: "4%", status: "COMPLETED", desc: "Continuous assessment based on research logbook maintenance and the submission of status documents 1 and 2." }
   ];
 
   return (
@@ -601,7 +601,7 @@ const Presentations = () => {
   const slides = [
     { title: "Proposal Presentation", status: "Available", file: "/ITMS-Website/docs/proposal_presentation.pptx" },
     { title: "Progress Presentation 1 (PP1)", status: "Available", file: "/ITMS-Website/docs/pp1_presentation.pptx" },
-    { title: "Progress Presentation 2", status: "Available", file: "/ITMS-Website/docs/pp2_presentation.pptx" },
+    { title: "Progress Presentation 2 (PP2)", status: "Available", file: "/ITMS-Website/docs/pp2_presentation.pptx" },
     { title: "Final Presentation", status: "Pending", file: "#" }
   ];
 
@@ -734,7 +734,7 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:research-itms@example.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
+    const mailtoLink = `mailto:itms@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
     window.location.href = mailtoLink;
   };
 
@@ -760,7 +760,7 @@ const ContactUs = () => {
 
             <div style={{ marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '1.5rem' }}>
               <span style={{ display: 'block', fontSize: '0.85rem', fontWeight: 'bold', color: 'var(--text-secondary)', marginBottom: '0.3rem' }}>Group Email</span>
-              <span style={{ fontSize: '1.05rem', color: '#fff' }}>research-itms@example.com</span>
+              <span style={{ fontSize: '1.05rem', color: '#fff' }}>itms@gmail.com</span>
             </div>
 
             <div style={{ marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '1.5rem' }}>
