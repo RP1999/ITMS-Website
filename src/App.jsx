@@ -548,10 +548,10 @@ const Milestones = () => {
     { title: "Progress Presentation I", date: "MAY 1, 2025", marks: "15%", status: "COMPLETED", desc: "First progress review covering the initial implementation stage and overall project development status." },
     { title: "Progress Presentation II", date: "MARCH 9, 2026", marks: "18%", status: "COMPLETED", desc: "Second progress review focused on advanced implementation progress, refinements, and readiness for completion." },
     { title: "Final Presentation and VIVA", date: "DATE TBD", marks: "20%", status: "PLANNED", desc: "Final presentation and viva assessment demonstrating the completed solution and evaluating each member's understanding." },
-    { title: "Final Report", date: "DATE TBD", marks: "19%", status: "COMPLETED", desc: "Comprehensive final project report documenting the full research, implementation, evaluation, and outcomes." },
+    { title: "Final Report", date: "MARCH 26, 2026", marks: "19%", status: "COMPLETED", desc: "Comprehensive final project report documenting the full research, implementation, evaluation, and outcomes." },
     { title: "Research Paper (published)", date: "DATE TBD", marks: "10%", status: "PLANNED", desc: "Published research paper presenting the project's contribution, findings, and academic value." },
-    { title: "Website", date: "DATE TBD", marks: "2%", status: "COMPLETED", desc: "Project website submission showcasing the research, implementation details, milestones, and downloadable resources." },
-    { title: "Research Logbook, Status Document 1 & 2", date: "DATE TBD", marks: "4%", status: "COMPLETED", desc: "Continuous assessment based on research logbook maintenance and the submission of status documents 1 and 2." }
+    { title: "Website", date: "MARCH 26, 2026", marks: "2%", status: "COMPLETED", desc: "Project website submission showcasing the research, implementation details, milestones, and downloadable resources." },
+    { title: "Research Logbook, Status Document 1 & 2", date: "DATE TBD", marks: "4%", status: "PLANNED", desc: "Continuous assessment based on research logbook maintenance and the submission of status documents 1 and 2." }
   ];
 
   return (
@@ -620,14 +620,14 @@ const Milestones = () => {
 
 const Documents = () => {
   const docs = [
-    { title: "Project Charter", status: "Available", file: "/ITMS-Website/docs/project_charter.pdf" },
-    { title: "Proposal Document", status: "Available", file: "/ITMS-Website/docs/proposal.pdf" },
+    { title: "Project Charter", status: "Available", file: "/ITMS-Website/docs/project_charter.pdf", image: "/ITMS-Website/docs/thumbnails/project_charter.png" },
+    { title: "Proposal Document", status: "Available", file: "/ITMS-Website/docs/proposal.pdf", image: "/ITMS-Website/docs/thumbnails/proposal.png" },
     { title: "Check List documents", status: "Coming Soon", file: "/ITMS-Website/docs/checklist.pdf" },
-    { title: "Final Document (Main)", status: "Coming Soon", file: "/ITMS-Website/docs/final_main.pdf" },
-    { title: "Final Document (IT22925572)", status: "Coming Soon", file: "/ITMS-Website/docs/final_annex1.pdf" },
+    { title: "Final Document (Main)", status: "Available", file: "/ITMS-Website/docs/final_main.pdf", image: "/ITMS-Website/docs/thumbnails/final_main.png" },
+    { title: "Final Document (IT22925572)", status: "Available", file: "/ITMS-Website/docs/final_annex1.pdf", image: "/ITMS-Website/docs/thumbnails/final_annex1.png" },
     { title: "Final Document (IT22900890)", status: "Coming Soon", file: "/ITMS-Website/docs/final_annex2.pdf" },
-    { title: "Final Document (IT22363848)", status: "Coming Soon", file: "/ITMS-Website/docs/final_annex3.pdf" },
-    { title: "Final Document (IT22337580)", status: "Coming Soon", file: "/ITMS-Website/docs/final_annex4.pdf" }
+    { title: "Final Document (IT22363848)", status: "Available", file: "/ITMS-Website/docs/final_annex3.pdf", image: "/ITMS-Website/docs/thumbnails/final_annex3.png" },
+    { title: "Final Document (IT22337580)", status: "Available", file: "/ITMS-Website/docs/final_annex4.pdf", image: "/ITMS-Website/docs/thumbnails/final_annex4.png" }
   ];
 
   return (
@@ -643,9 +643,15 @@ const Documents = () => {
         >
           {docs.map((doc, i) => (
             <motion.div key={i} variants={fadeUpVariant} className="glass-card glass-card-hover" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <div style={{ background: 'rgba(255, 255, 255, 0.05)', padding: '20px', borderRadius: '50%', marginBottom: '1.5rem' }}>
-                <FileText size={40} color="var(--primary-color)" />
-              </div>
+              {doc.image ? (
+                <div style={{ width: '100%', height: '180px', borderRadius: '12px', overflow: 'hidden', marginBottom: '1.5rem', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.02)' }}>
+                  <img src={doc.image} alt={doc.title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+                </div>
+              ) : (
+                <div style={{ background: 'rgba(255, 255, 255, 0.05)', padding: '20px', borderRadius: '50%', marginBottom: '1.5rem' }}>
+                  <FileText size={40} color="var(--primary-color)" />
+                </div>
+              )}
               <h4 style={{ marginBottom: '1.5rem', fontSize: '1.2rem' }}>{doc.title}</h4>
 
               {doc.status === 'Available' ? (
@@ -665,9 +671,9 @@ const Documents = () => {
 
 const Presentations = () => {
   const slides = [
-    { title: "Proposal Presentation", status: "Available", file: "/ITMS-Website/docs/proposal_presentation.pptx" },
-    { title: "Progress Presentation 1 (PP1)", status: "Available", file: "/ITMS-Website/docs/pp1_presentation.pptx" },
-    { title: "Progress Presentation 2 (PP2)", status: "Available", file: "/ITMS-Website/docs/pp2_presentation.pptx" },
+    { title: "Proposal Presentation", status: "Available", file: "/ITMS-Website/docs/proposal_presentation.pptx", image: "/ITMS-Website/docs/thumbnails/proposal_presentation.png" },
+    { title: "Progress Presentation 1 (PP1)", status: "Available", file: "/ITMS-Website/docs/pp1_presentation.pptx", image: "/ITMS-Website/docs/thumbnails/pp1_presentation.png" },
+    { title: "Progress Presentation 2 (PP2)", status: "Available", file: "/ITMS-Website/docs/pp2_presentation.pptx", image: "/ITMS-Website/docs/thumbnails/pp2_presentation.png" },
     { title: "Final Presentation", status: "Pending", file: "#" }
   ];
 
@@ -684,9 +690,15 @@ const Presentations = () => {
         >
           {slides.map((slide, i) => (
             <motion.div key={i} variants={fadeUpVariant} className="glass-card glass-card-hover" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <div style={{ background: 'rgba(255, 255, 255, 0.05)', padding: '20px', borderRadius: '50%', marginBottom: '1.5rem' }}>
-                <MonitorPlay size={40} color="var(--primary-color)" />
-              </div>
+              {slide.image ? (
+                <div style={{ width: '100%', height: '180px', borderRadius: '12px', overflow: 'hidden', marginBottom: '1.5rem', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.02)' }}>
+                  <img src={slide.image} alt={slide.title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+                </div>
+              ) : (
+                <div style={{ background: 'rgba(255, 255, 255, 0.05)', padding: '20px', borderRadius: '50%', marginBottom: '1.5rem' }}>
+                  <MonitorPlay size={40} color="var(--primary-color)" />
+                </div>
+              )}
               <h4 style={{ marginBottom: '1.5rem', fontSize: '1.2rem' }}>{slide.title}</h4>
 
               {slide.status === 'Available' ? (
