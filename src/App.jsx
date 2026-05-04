@@ -625,7 +625,7 @@ const Documents = () => {
     { title: "Check List documents", status: "Coming Soon", file: "/ITMS-Website/docs/checklist.pdf" },
     { title: "Final Document (Main)", status: "Available", file: "/ITMS-Website/docs/final_main.pdf", image: "/ITMS-Website/docs/thumbnails/final_main.png" },
     { title: "Final Document (IT22925572)", status: "Available", file: "/ITMS-Website/docs/final_annex1.pdf", image: "/ITMS-Website/docs/thumbnails/final_annex1.png" },
-    { title: "Final Document (IT22900890)", status: "Coming Soon", file: "/ITMS-Website/docs/final_annex2.pdf" },
+    { title: "Final Document (IT22900890)", status: "Available", file: "/ITMS-Website/docs/final_annex2.pdf", image: "/ITMS-Website/docs/thumbnails/final_annex2.png" },
     { title: "Final Document (IT22363848)", status: "Available", file: "/ITMS-Website/docs/final_annex3.pdf", image: "/ITMS-Website/docs/thumbnails/final_annex3.png" },
     { title: "Final Document (IT22337580)", status: "Available", file: "/ITMS-Website/docs/final_annex4.pdf", image: "/ITMS-Website/docs/thumbnails/final_annex4.png" }
   ];
@@ -674,7 +674,7 @@ const Presentations = () => {
     { title: "Proposal Presentation", status: "Available", file: "/ITMS-Website/docs/proposal_presentation.pptx", image: "/ITMS-Website/docs/thumbnails/proposal_presentation.png" },
     { title: "Progress Presentation 1 (PP1)", status: "Available", file: "/ITMS-Website/docs/pp1_presentation.pptx", image: "/ITMS-Website/docs/thumbnails/pp1_presentation.png" },
     { title: "Progress Presentation 2 (PP2)", status: "Available", file: "/ITMS-Website/docs/pp2_presentation.pptx", image: "/ITMS-Website/docs/thumbnails/pp2_presentation.png" },
-    { title: "Final Presentation", status: "Pending", file: "#" }
+    { title: "Final Presentation", status: "Available", file: "/ITMS-Website/docs/final_presentation.pptx", image: "/ITMS-Website/docs/thumbnails/final_presentation.png" }
   ];
 
   return (
