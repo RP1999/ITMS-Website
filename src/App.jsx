@@ -544,7 +544,7 @@ const Methodology = () => (
 
 const Milestones = () => {
   const milestones = [
-    { title: "Proposal Presentation & Report", date: "SEPTEMBER 9, 2025", marks: "12%", status: "PLANNED", desc: "Initial proposal presentation and report submission covering the project idea, scope, and planned approach." },
+    { title: "Proposal Presentation & Report", date: "SEPTEMBER 9, 2025", marks: "12%", status: "COMPLETED", desc: "Initial proposal presentation and report submission covering the project idea, scope, and planned approach." },
     { title: "Progress Presentation I", date: "MAY 1, 2025", marks: "15%", status: "COMPLETED", desc: "First progress review covering the initial implementation stage and overall project development status." },
     { title: "Progress Presentation II", date: "MARCH 9, 2026", marks: "18%", status: "COMPLETED", desc: "Second progress review focused on advanced implementation progress, refinements, and readiness for completion." },
     { title: "Final Presentation and VIVA", date: "MAY 5, 2026", marks: "20%", status: "PLANNED", desc: "Final presentation and viva assessment demonstrating the completed solution and evaluating each member's understanding." },
