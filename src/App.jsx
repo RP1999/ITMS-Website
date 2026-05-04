@@ -544,14 +544,14 @@ const Methodology = () => (
 
 const Milestones = () => {
   const milestones = [
-    { title: "Proposal Presentation & Report", date: "DATE TBD", marks: "12%", status: "COMPLETED", desc: "Initial proposal presentation and report submission covering the project idea, scope, and planned approach." },
+    { title: "Proposal Presentation & Report", date: "SEPTEMBER 9, 2025", marks: "12%", status: "PLANNED", desc: "Initial proposal presentation and report submission covering the project idea, scope, and planned approach." },
     { title: "Progress Presentation I", date: "MAY 1, 2025", marks: "15%", status: "COMPLETED", desc: "First progress review covering the initial implementation stage and overall project development status." },
     { title: "Progress Presentation II", date: "MARCH 9, 2026", marks: "18%", status: "COMPLETED", desc: "Second progress review focused on advanced implementation progress, refinements, and readiness for completion." },
-    { title: "Final Presentation and VIVA", date: "DATE TBD", marks: "20%", status: "PLANNED", desc: "Final presentation and viva assessment demonstrating the completed solution and evaluating each member's understanding." },
+    { title: "Final Presentation and VIVA", date: "MAY 5, 2026", marks: "20%", status: "PLANNED", desc: "Final presentation and viva assessment demonstrating the completed solution and evaluating each member's understanding." },
     { title: "Final Report", date: "MARCH 26, 2026", marks: "19%", status: "COMPLETED", desc: "Comprehensive final project report documenting the full research, implementation, evaluation, and outcomes." },
     { title: "Research Paper (published)", date: "DATE TBD", marks: "10%", status: "PLANNED", desc: "Published research paper presenting the project's contribution, findings, and academic value." },
     { title: "Website", date: "MARCH 26, 2026", marks: "2%", status: "COMPLETED", desc: "Project website submission showcasing the research, implementation details, milestones, and downloadable resources." },
-    { title: "Research Logbook, Status Document 1 & 2", date: "DATE TBD", marks: "4%", status: "PLANNED", desc: "Continuous assessment based on research logbook maintenance and the submission of status documents 1 and 2." }
+    { title: "Research Logbook, Status Document 1 & 2", date: "MAY 4, 2026", marks: "4%", status: "COMPLETED", desc: "Continuous assessment based on research logbook maintenance and the submission of status documents 1 and 2." }
   ];
 
   return (
@@ -622,7 +622,7 @@ const Documents = () => {
   const docs = [
     { title: "Project Charter", status: "Available", file: "/ITMS-Website/docs/project_charter.pdf", image: "/ITMS-Website/docs/thumbnails/project_charter.png" },
     { title: "Proposal Document", status: "Available", file: "/ITMS-Website/docs/proposal.pdf", image: "/ITMS-Website/docs/thumbnails/proposal.png" },
-    { title: "Check List documents", status: "Coming Soon", file: "/ITMS-Website/docs/checklist.pdf" },
+    { title: "Check List documents", status: "Available", file: "/ITMS-Website/docs/checklist.pdf", image: "/ITMS-Website/docs/thumbnails/checklist.png" },
     { title: "Final Document (Main)", status: "Available", file: "/ITMS-Website/docs/final_main.pdf", image: "/ITMS-Website/docs/thumbnails/final_main.png" },
     { title: "Final Document (IT22925572)", status: "Available", file: "/ITMS-Website/docs/final_annex1.pdf", image: "/ITMS-Website/docs/thumbnails/final_annex1.png" },
     { title: "Final Document (IT22900890)", status: "Available", file: "/ITMS-Website/docs/final_annex2.pdf", image: "/ITMS-Website/docs/thumbnails/final_annex2.png" },
@@ -674,7 +674,7 @@ const Presentations = () => {
     { title: "Proposal Presentation", status: "Available", file: "/ITMS-Website/docs/proposal_presentation.pptx", image: "/ITMS-Website/docs/thumbnails/proposal_presentation.png" },
     { title: "Progress Presentation 1 (PP1)", status: "Available", file: "/ITMS-Website/docs/pp1_presentation.pptx", image: "/ITMS-Website/docs/thumbnails/pp1_presentation.png" },
     { title: "Progress Presentation 2 (PP2)", status: "Available", file: "/ITMS-Website/docs/pp2_presentation.pptx", image: "/ITMS-Website/docs/thumbnails/pp2_presentation.png" },
-    { title: "Final Presentation", status: "Available", file: "/ITMS-Website/docs/final_presentation.pptx", image: "/ITMS-Website/docs/thumbnails/final_presentation.png" }
+    { title: "Final Presentation (PPT)", status: "Available", file: "/ITMS-Website/docs/final_presentation.pptx", image: "/ITMS-Website/docs/thumbnails/final_presentation.png" }
   ];
 
   return (
