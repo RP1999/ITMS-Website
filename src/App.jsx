@@ -761,10 +761,10 @@ const Supervisors = () => {
 
 const AboutUs = () => {
   const members = [
-    { name: "Gunarathna R.P", role: "Parking Behaviour & Traffic Impact Analysis", badge: "GROUP LEADER", image: imgGunarathna, position: "center top", linkedin: "https://www.linkedin.com/in/ranindu-pramod/", email: "it22925572@my.sliit.lk" },
-    { name: "Randima K.M.G.D", role: "Smart Traffic Violation Detection", badge: "GROUP MEMBER", image: imgRandima, position: "center", linkedin: "https://www.linkedin.com/in/dilina-randima-3375bb230/", email: "it22900890@my.sliit.lk" },
-    { name: "Tennakoon I.M.S.R", role: "Fuzzy Logic Controller", badge: "GROUP MEMBER", image: imgTennakoon, position: "center", linkedin: "https://www.linkedin.com/in/siluni-ransadi-a0a4a231b/", email: "it22363848@my.sliit.lk" },
-    { name: "Palihakkara P.I", role: "Accident Risk Prediction & Dashboard", badge: "GROUP MEMBER", image: imgPalihakkara, position: "center", linkedin: "https://www.linkedin.com/in/piyumi-palihakkara-811004344/", email: "it22337580@my.sliit.lk" }
+    { name: "Gunarathna R.P", role: "Parking Behaviour & Traffic Impact Analysis", badge: "GROUP LEADER", image: imgGunarathna, position: "center top", linkedin: "https://www.linkedin.com/in/ranindu-pramod/", email: "promoranidu@gmail.com" },
+    { name: "Randima K.M.G.D", role: "Smart Traffic Violation Detection", badge: "GROUP MEMBER", image: imgRandima, position: "center", linkedin: "https://www.linkedin.com/in/dilina-randima-3375bb230/", email: "dilinarandima333@gmail.com" },
+    { name: "Tennakoon I.M.S.R", role: "Fuzzy Logic Controller", badge: "GROUP MEMBER", image: imgTennakoon, position: "center", linkedin: "https://www.linkedin.com/in/siluni-ransadi-a0a4a231b/", email: "siluniransadi21@gmail.com" },
+    { name: "Palihakkara P.I", role: "Accident Risk Prediction & Dashboard", badge: "GROUP MEMBER", image: imgPalihakkara, position: "center", linkedin: "https://www.linkedin.com/in/piyumi-palihakkara-811004344/", email: "piyumiimashi10@gmail.com" }
   ];
 
   return (
