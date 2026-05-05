@@ -842,6 +842,16 @@ const ContactUs = () => {
             </div>
 
             <div style={{ marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '1.5rem' }}>
+              <span style={{ display: 'block', fontSize: '0.85rem', fontWeight: 'bold', color: 'var(--text-secondary)', marginBottom: '0.6rem' }}>Member Emails</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                <span style={{ fontSize: '0.95rem', color: '#fff' }}>Member 1: promoranidu@gmail.com</span>
+                <span style={{ fontSize: '0.95rem', color: '#fff' }}>Member 2: dilinarandima333@gmail.com</span>
+                <span style={{ fontSize: '0.95rem', color: '#fff' }}>Member 3: siluniransadi21@gmail.com</span>
+                <span style={{ fontSize: '0.95rem', color: '#fff' }}>Member 4: piyumiimashi10@gmail.com</span>
+              </div>
+            </div>
+
+            <div style={{ marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '1.5rem' }}>
               <span style={{ display: 'block', fontSize: '0.85rem', fontWeight: 'bold', color: 'var(--text-secondary)', marginBottom: '0.3rem' }}>University</span>
               <span style={{ fontSize: '1.05rem', color: '#fff' }}>Sri Lanka Institute of Information Technology</span>
             </div>
