@@ -482,6 +482,7 @@ const ResearchObjectives = () => {
     { title: "Parking Violation Detection", desc: "Develop an AI-driven module to detect illegally parked vehicles in real-time and calculate fines using YOLOv8 computer vision models." },
     { title: "Traffic Violation Detection", desc: "Implement automated traffic rule monitoring to identify violations like lane weaving and redline crossing, capturing evidence for law enforcement." },
     { title: "IoT Smart Junction System", desc: "Build a sensor-integrated junction controller using ESP8266 to optimize signal timing based on vehicle density and detect emergency vehicles." },
+    { title: "Accident Risk Prediction & Dashboard", desc: "Calculate real-time accident risk scores based on vehicle speed, distance, and violations. Track abnormal driving behaviors to provide preventive alerts, display live data on a Streamlit dashboard, and generate incident reports." },
     { title: "Backend & Cloud Integration", desc: "Create a centralized FastAPI integration layer that syncs IoT data from AWS DynamoDB with Firebase for real-time mobile and dashboard access." }
   ];
 
