@@ -547,9 +547,9 @@ const Milestones = () => {
     { title: "Proposal Presentation & Report", date: "SEPTEMBER 9, 2025", marks: "12%", status: "COMPLETED", desc: "Initial proposal presentation and report submission covering the project idea, scope, and planned approach." },
     { title: "Progress Presentation I", date: "MAY 1, 2025", marks: "15%", status: "COMPLETED", desc: "First progress review covering the initial implementation stage and overall project development status." },
     { title: "Progress Presentation II", date: "MARCH 9, 2026", marks: "18%", status: "COMPLETED", desc: "Second progress review focused on advanced implementation progress, refinements, and readiness for completion." },
-    { title: "Final Presentation and VIVA", date: "MAY 5, 2026", marks: "20%", status: "PLANNED", desc: "Final presentation and viva assessment demonstrating the completed solution and evaluating each member's understanding." },
+    { title: "Final Presentation and VIVA", date: "MAY 5, 2026", marks: "20%", status: "COMPLETED", desc: "Final presentation and viva assessment demonstrating the completed solution and evaluating each member's understanding." },
     { title: "Final Report", date: "MARCH 26, 2026", marks: "19%", status: "COMPLETED", desc: "Comprehensive final project report documenting the full research, implementation, evaluation, and outcomes." },
-    { title: "Research Paper (published)", date: "DATE TBD", marks: "10%", status: "PLANNED", desc: "Published research paper presenting the project's contribution, findings, and academic value." },
+    { title: "Research Paper (published)", date: "DATE TBD", marks: "10%", status: "COMPLETED", desc: "Published research paper presenting the project's contribution, findings, and academic value." },
     { title: "Website", date: "MARCH 26, 2026", marks: "2%", status: "COMPLETED", desc: "Project website submission showcasing the research, implementation details, milestones, and downloadable resources." },
     { title: "Research Logbook, Status Document 1 & 2", date: "MAY 4, 2026", marks: "4%", status: "COMPLETED", desc: "Continuous assessment based on research logbook maintenance and the submission of status documents 1 and 2." }
   ];
